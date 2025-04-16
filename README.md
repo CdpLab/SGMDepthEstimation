@@ -63,17 +63,21 @@ python --version
 ```
 
 -If Python 3.9 is not installed, download it from the official Python website and install it.
+
 2.Navigate to Project Directory
--Open a terminal and change to the project's root directory (where requirements.txt is located):
+
+- Open a terminal and change to the project's root directory (where requirements.txt is located):
 
 ```bash
 cd /path/to/project
 ```
 
 3. Install Dependencies
+4. 
 Install all required Python packages listed in requirements.txt by running:
 
 ```bash
 pip install -r requirements.txt
 ```
+
 This command installs libraries such as PyTorch, NumPy, and others necessary for the project.
