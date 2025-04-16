@@ -84,3 +84,23 @@ pip install -r requirements.txt
 ```
 
 This command installs libraries such as PyTorch, NumPy, and others necessary for the project.
+
+##  Usage Instructions
+This section provides detailed instructions on how to use the code for Training, Testing, and Inference with the project. Each part includes specific steps and example commands to ensure users can run the code smoothly.
+1.Training：
+- Navigate to the Project Directory: Ensure you are in the project's root directory where the training script is located.
+- Run the Training Script: Use the following command to start the training process. Replace paths and parameters as needed:
+
+```bash
+python3 train.py \
+        --model-name SGDEM \
+        --depth-training-loaders "kitti_zhou_train" \
+        --train-batches-per-epoch 7293 \
+        --masking-enable \
+        --masking-from-epoch 15 \
+        --masking-linear-increase
+```
+You can check “./arguments.py” to see which specific parameters need to be selected and adjusted during code training.
+
+2.Depth Evaluation
+For evaluation of the predicted depth use eval_depth.py. 
