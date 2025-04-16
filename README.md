@@ -87,7 +87,9 @@ This command installs libraries such as PyTorch, NumPy, and others necessary for
 
 ##  Usage Instructions
 This section provides detailed instructions on how to use the code for Training, Testing, and Inference with the project. Each part includes specific steps and example commands to ensure users can run the code smoothly.
-1.Training：
+
+1.Training
+
 - Navigate to the Project Directory: Ensure you are in the project's root directory where the training script is located.
 - Run the Training Script: Use the following command to start the training process. Replace paths and parameters as needed:
 
@@ -103,4 +105,38 @@ python3 train.py \
 You can check “./arguments.py” to see which specific parameters need to be selected and adjusted during code training.
 
 2.Depth Evaluation
+
 For evaluation of the predicted depth use eval_depth.py. 
+```bash
+python3 eval_depth.py\
+        --sys-best-effort-determinism \
+        --model-name "eval_kitti_depth" \
+        --model-load sgdepth_eccv_test/zhou_full/checkpoints/epoch_20 \
+        --depth-validation-loaders "kitti_zhou_test"
+```
+
+3.Segmentation Evaluation
+
+For the evaluation of the segmentation results on Cityscapes use the eval_segmentation.py
+```bash
+python3 eval_segmentation.py \
+        --sys-best-effort-determinism \
+        --model-name "eval_kitti_seg" \
+        --model-load sgdepth_eccv_test/zhou_full/checkpoints/epoch_20 \
+        --segmentation-validation-loaders "cityscapes_validation" \ 
+        --segmentation-validation-resize-width 1024 
+        --segmentation-validation-resize-height 512 \
+        --eval-num-images 1
+```
+
+4.Inference
+
+The inference script is working independently. It just imports the model and the arguments. It inferences all images in a given directory and outputs them to defined directory.
+```bash
+python3 inference.py \       
+                    --model-path sgdepth_eccv_test/zhou_full/epoch_20/model.pth \
+                    --inference-resize-height 192 \
+                    --inference-resize-width 640 \
+                    --image-path /path/to/input/dir \
+                    --output-path /path/to/output/dir
+```
