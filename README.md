@@ -53,6 +53,10 @@ DIML/CVL：https://dimlrgbd.github.io/
 
 NYU：https://cs.nyu.edu/~fergus/datasets/nyu_depth_v2.html
 
+### Data Preprocessing for Kitti Dataset
+
+The preprocessing of the Kitti dataset is an essential step to prepare the data for training and testing the monocular depth estimation model. This process is handled in the `/SGDEM-master-main/dataloader/data_preprocessing/` directory, which contains scripts and functions designed to load, augment, and normalize the Kitti data effectively.
+
 ## Installation Guide
 To get started with this project, follow these steps to set up the environment on your system:
 1. Verify Python Version
