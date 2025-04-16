@@ -41,7 +41,6 @@ We introduced a global-local attention module in the decoder to enhance the extr
 - Dependencies listed in `requirements.txt`
 
 ## Dataset
-
 This project uses the following datasets for training and testing of monocular depth estimation. The training datasets include KITTI and Cityscapes, while the testing datasets include DDAD, DIML/CVL, and the NYU Depth Dataset V2. Detailed descriptions of each dataset and their official website links are provided below.
 
 Kitti：https://www.cvlibs.net/datasets/kitti/
@@ -54,7 +53,11 @@ DIML/CVL：https://dimlrgbd.github.io/
 
 NYU：https://cs.nyu.edu/~fergus/datasets/nyu_depth_v2.html
 
-
-
-
+##Installation Guide
+To get started with this project, follow these steps to set up the environment on your system:
+1. Verify Python Version
+- This project requires Python 3.9. Check your installed version by running:
+'''bash
+python --version
+'''
 
