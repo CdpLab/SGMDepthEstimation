@@ -23,7 +23,7 @@ The model's performance on different datasets (Kitties, Cityscapes, Ddad, DIML, 
 
 ### Results
 
-| Method | Train | BackBone | Abs Rel | Sq Rel | RMSE | RMSE log |δ < 1.25 | δ² < 1.25 | δ³ < 1.25 | 
+| Method | Train | BackBone | Abs Rel | Sq Rel | RMSE | RMSE log |δ < 1.25 | δ < 1.25² | δ < 1.25³ | 
 |--------|---------|---------|---------|---------|---------|---------|---------|---------|---------|
 | Ours | M+Se |ResNet50|0.091|0.625|4.266|0.161|0.894|0.964|0.986|
 | Ours(288x960) | M+Se|ResNet50|0.088|0.611|3.962|0.157|0.897|0.968|0.986 |
