@@ -1,6 +1,6 @@
 #  <p align="center">Semantic-Guided Monocular Depth Estimation Based on Patch Knowledge Distillation</p>
 
-<p align="center">Jia Liu, Jiaxu Ning, Bin Wang, Shuai Ding, Lina Wei, and Dapeng Chen*</p>
+<p align="center">Jia Liu, Jiaxu Ning, Weixin Wang, Bin Wang, Lina Wei, and Dapeng Chen*</p>
 <p align="center">Nanjing University of Information Science and Technology</p>
 
 ## <p align="center">ABSTRACT</p>
