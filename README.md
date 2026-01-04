@@ -3,6 +3,7 @@
 <p align="center">Jia Liu, Jiaxu Ning, Weixin Wang, Bin Wang, Lina Wei, and Dapeng Chen*</p>
 <p align="center">Nanjing University of Information Science and Technology</p>
 
+---
 ## <p align="center">ABSTRACT</p>
 Self-supervised monocular depth estimation has always suffered from issues like blurry contours and incomplete structures, which have constrained its performance in computer vision tasks. Integrating semantic segmentation with monocular depth estimation methods holds immense potential for addressing these concerns. To further tackle the problem of blurred object contours in depth estimation, we introduce a semantic-guided monocular depth estimation model based on patch knowledge distillation. The model incorporates a new loss function called the semantic depth consistency loss. This loss ensures that pixels with the same semantic label maintain approximately consistent relative depths. During model training, the model also incorporates patch-based depth refinement as a knowledge distillation strategy. Global-Local Attention module has also been added to the model to highlight local details. The model's performance was validated on multiple datasets, including Kitti, Ddad, and others. Compared to state-of-the-art models, it demonstrated superiority in local detail representation, with a square relative error of 0.572, achieving a threshold accuracy delta<1.25^3 of 0.988.
 
